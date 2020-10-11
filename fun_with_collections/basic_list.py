@@ -13,4 +13,10 @@ def make_list():
     return u_list
 
 def get_input():
-    pass
+    u_input = input("give me a number: ")
+    return u_input
+
+
+if __name__ == '__main__':
+    test_list = make_list()
+    print(test_list)
