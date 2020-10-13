@@ -8,13 +8,18 @@ car_make = ['Jeep', 'Chevrolet', 'Ford', 'Dodge', 'Nissan']
 
 
 def search_list(a):
-    pass
+    if a in car_make:
+        return car_make.index(a)
+    else:
+        return '-1'
 
 
 def sort_list():
-    pass
+    car_make.sort()
+    sorted_list = car_make
+    return sorted_list
 
 
 if __name__ == '__main__':
-    search_list()
+    search_list('Ford')
     sort_list()
