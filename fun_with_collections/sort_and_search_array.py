@@ -16,10 +16,14 @@ def search_array(a):
 
 
 def sort_array():
-    pass
+    baseball_teams.sort()
+    sorted_array = baseball_teams
+    return sorted_array
+    # used return to later be called in the main
 
 if __name__ == '__main__':
-    search_array()
+    search_array('Pirates')
     sort_array()
+
 
 
