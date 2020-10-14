@@ -9,7 +9,10 @@ baseball_teams = arr.baseball_teams = ['Cubs', 'Cardinals', 'Pirates', 'Reds', '
 
 
 def search_array(a):
-    pass
+    if a in baseball_teams:
+        return baseball_teams.index(a)
+    else:
+        return '-1'
 
 
 def sort_array():
@@ -18,4 +21,5 @@ def sort_array():
 if __name__ == '__main__':
     search_array()
     sort_array()
+
 
